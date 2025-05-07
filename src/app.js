@@ -11,9 +11,12 @@ function App() {
 
   return (
     <Router>
-      <div className="bg-white min-h-screen flex flex-col justify-between max-w-sm mx-auto">
+      <div className="bg-white min-h-screen flex flex-col justify-between max-w-sm mx-auto relative pb-16">
         <Routes>
-          <Route path="/" element={<Home showMenu={showMenu} setShowMenu={setShowMenu} />} />
+          <Route 
+            path="/" 
+            element={<Home showMenu={showMenu} setShowMenu={setShowMenu} />} 
+          />
           <Route path="/bag" element={<Bag />} />
           <Route path="/alerts" element={<Alerts />} />
           <Route path="/profile" element={<Profile />} />
